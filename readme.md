@@ -1,4 +1,4 @@
-## pokego-scan
+## pokego-scanner
 
 Node package for scanning Pokemon in Pokemon GO.
 
@@ -11,11 +11,11 @@ This project is not endorsed in by Nintendo or Niantic in any way; use it at you
 #### From NodeJS
 
 ```
-$ npm install pokego-scan
+$ npm install pokego-scanner
 ```
 
 ```js
-var pokegoScan = require('pokego-scan');
+var pokegoScan = require('pokego-scanner');
 
 var coords = {
     latitude: 40.4164737,
@@ -64,26 +64,26 @@ pokegoScan(coords, {filter: ["Zubat", "Pidgey"]}, function(err, pokemon) {
 #### From the console
 
 ```
-$ npm install -g pokego-scan
-$ pokego-scan [--distance 100 --pokemon Pidgey] -- 40.4164737,-3.7042757
+$ npm install -g pokego-scanner
+$ pokego-scanner [--distance 100 --pokemon Pidgey] -- 40.4164737,-3.7042757
 ```
 
 ### Debugging
 
-Some debugging info can be shown through the [debug](https://www.npmjs.com/package/debug) package. To enable it, use the namespace `pokego-scan`:
+Some debugging info can be shown through the [debug](https://www.npmjs.com/package/debug) package. To enable it, use the namespace `pokego-scanner`:
 
 ```
-$ DEBUG=pokego-scan pokego-scan -- 40.4164737,-3.7042757
-  pokego-scan https://pokevision.com/map/scan/40.4164737/-3.7042757 +0ms
-  pokego-scan { status: 'success', jobId: '1f6df38141ceaa194703b22830f0e80f' } +293ms
-  pokego-scan https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +15ms
-  pokego-scan { status: 'success', jobStatus: 'in_progress' } +183ms
-  pokego-scan job in progress, retry in 1500ms (attempt 2 of 10) +0ms
-  pokego-scan https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +2s
-  pokego-scan { status: 'success', jobStatus: 'in_progress' } +194ms
-  pokego-scan job in progress, retry in 3000ms (attempt 3 of 10) +1ms
-  pokego-scan https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +3s
-  pokego-scan { status: 'success', pokemon: [ { id: '24192555', ... }, ... ] } +224ms
+$ DEBUG=pokego-scanner pokego-scanner -- 40.4164737,-3.7042757
+  pokego-scanner https://pokevision.com/map/scan/40.4164737/-3.7042757 +0ms
+  pokego-scanner { status: 'success', jobId: '1f6df38141ceaa194703b22830f0e80f' } +293ms
+  pokego-scanner https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +15ms
+  pokego-scanner { status: 'success', jobStatus: 'in_progress' } +183ms
+  pokego-scanner job in progress, retry in 1500ms (attempt 2 of 10) +0ms
+  pokego-scanner https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +2s
+  pokego-scanner { status: 'success', jobStatus: 'in_progress' } +194ms
+  pokego-scanner job in progress, retry in 3000ms (attempt 3 of 10) +1ms
+  pokego-scanner https://pokevision.com/map/data/40.4164737/-3.7042757/1f6df38141ceaa194703b22830f0e80f +3s
+  pokego-scanner { status: 'success', pokemon: [ { id: '24192555', ... }, ... ] } +224ms
 [ { id: '24703530',
     data: '[]',
     expiration_time: 1469134868,

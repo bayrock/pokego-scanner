@@ -1,5 +1,5 @@
 var async = require('async'),
-    debug = require('debug')('pokego-scan'),
+    debug = require('debug')('pokego-scanner'),
     cloudscraper = require('cloudscraper');
 
 function get(url, next) {

@@ -1,18 +1,18 @@
 {
-  "name": "pokego-scan",
+  "name": "pokego-scanner",
   "version": "0.1.6",
   "description": "Scan locations for Pokemon in Pokemon GO",
-  "homepage": "https://github.com/bayrock/pokego-scan#readme",
+  "homepage": "https://github.com/bayrock/pokego-scanner#readme",
   "author": {
     "name": "Bailey Chestnut",
     "email": "baileychestnut@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bayrock/pokego-scan.git"
+    "url": "git+https://github.com/bayrock/pokego-scanner.git"
   },
   "bugs": {
-    "url": "https://github.com/bayrock/pokego-scan/issues"
+    "url": "https://github.com/bayrock/pokego-scanner/issues"
   },
   "keywords": [
     "pokemon go",
@@ -21,7 +21,7 @@
     "api"
   ],
   "bin": {
-    "pokego-scan": "cli.js"
+    "pokego-scanner": "cli.js"
   },
   "scripts": {
     "test": "node test.js"

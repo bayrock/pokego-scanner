@@ -1,5 +1,5 @@
 var async = require('async'),
-    debug = require('debug')('pokego-scan'),
+    debug = require('debug')('pokego-scanner'),
     geolib = require('geolib'),
     isFunction = require('is-function'),
     pokedex = require('./pokedex.json'),
