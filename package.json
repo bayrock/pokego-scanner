@@ -1,6 +1,6 @@
 {
   "name": "pokego-scanner",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Scan locations for Pokemon in Pokemon GO",
   "homepage": "https://github.com/bayrock/pokego-scanner#readme",
   "author": {
